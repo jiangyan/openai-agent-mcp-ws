@@ -17,6 +17,9 @@ For example, we can use 2 simple mcp tool methods draw_dot (returns *) and draw_
 
 ![image](https://github.com/user-attachments/assets/47c2a2f2-2ac1-48c3-8671-5ad2a34e3f09)
 
+## Check your agent workflow in openai API platform's traces
+<img width="1463" alt="image" src="https://github.com/user-attachments/assets/da459f92-56b8-40bd-9625-2bd12261149a" />
+
 ## Project Structure
 
 - `server.py`: Implements a simple MCP server with two tools (`draw_dot` and `draw_dash`) exposed via WebSockets
