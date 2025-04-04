@@ -19,7 +19,7 @@ async def draw_dot(arguments: dict | None) -> str:
 @mcp.tool()
 async def draw_dash(arguments: dict | None) -> str:
     """draw a dash and returns"""
-    return "-"
+    return "~"
 
 
 # Define the ASGI WebSocket endpoint
@@ -41,15 +41,7 @@ app = Starlette(routes=[
 
 async def main():
     """Runs the Uvicorn server."""
-    config = uvicorn.Config(
-        app, 
-        host="localhost", 
-        port=8000, 
-        log_level="info",
-        timeout_keep_alive=120,  # Increase keep-alive timeout (default is 5 seconds)
-        ws_ping_interval=20,     # Send ping every 20 seconds
-        ws_ping_timeout=60       # Wait 60 seconds for pong response
-    )
+    config = uvicorn.Config(app, host="localhost", port=8000,log_level="info")
     server = uvicorn.Server(config)
     print("Starting WebSocket MCP server on ws://localhost:8000/mcp")
     await server.serve()
