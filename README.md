@@ -12,6 +12,9 @@ The Model Context Protocol (MCP) is an open protocol that standardizes how appli
 
 Think of MCP like a USB-C port for AI applications, providing a standardized way to connect AI models to different services and tools.
 
+For example, we can use 2 simple mcp tool methods draw_dot (returns *) and draw_dash (returns ~) to draw morse codes, 😎
+![image](https://github.com/user-attachments/assets/47c2a2f2-2ac1-48c3-8671-5ad2a34e3f09)
+
 ## Project Structure
 
 - `server.py`: Implements a simple MCP server with two tools (`draw_dot` and `draw_dash`) exposed via WebSockets
