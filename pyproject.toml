@@ -1,0 +1,13 @@
+[project]
+name = "openai-agent-mcp-ws"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.6.0",
+    "openai",
+    "openai-agents",
+    "uvicorn[standard]>=0.34.0",
+    "websockets>=15.0.1",
+]
